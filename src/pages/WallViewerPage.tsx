@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { HeartCrack, Lock } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { WallViewer } from '../components/WallViewer';
-import { Footer } from '../components/Footer';
+// import { Footer } from '../components/Footer';
 
 interface WallData {
     id: string;
