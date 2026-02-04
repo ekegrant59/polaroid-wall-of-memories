@@ -20,7 +20,7 @@ export const LandingPage = () => {
     const [stage, setStage] = useState<PageStage>('marketing');
     const [viewedPhotos, setViewedPhotos] = useState<Set<string>>(new Set());
     const [isBurning, setIsBurning] = useState(false);
-    const [showCTA, setShowCTA] = useState(true);
+    const [showCTA, setShowCTA] = useState(false);
 
     const handlePhotoViewed = (id: string) => {
         setViewedPhotos(prev => {
