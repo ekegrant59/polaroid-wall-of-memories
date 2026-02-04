@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 export const Footer = () => {
     return (
-        <footer className="w-full py-6 z-10 mt-10">
+        <footer className="w-full py-6 z-10">
             <div className="flex flex-col items-center justify-center gap-2">
                 <p className="font-serif text-ink/60 ">
                     Developed by <span className="font-semibold text-ink/80">Eke Grant</span>

@@ -5,6 +5,7 @@ import { LetterReveal } from './LetterReveal';
 import { useIsMobile } from '../hooks/useIsMobile';
 import rosesBackground from '../assets/roses-background.png';
 import rosesBackgroundMobile from '../assets/rose-background-mobile.png';
+import { Footer } from './Footer';
 
 interface WallData {
     id: string;
@@ -99,6 +100,9 @@ export const WallViewer = ({ wall, polaroids }: Props) => {
                     finalMessage={wall.final_message}
                 />
             )}
+
+            {/* Footer */}
+            <Footer />
         </main>
     );
 };

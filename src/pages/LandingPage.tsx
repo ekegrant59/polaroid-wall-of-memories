@@ -73,7 +73,7 @@ export const LandingPage = () => {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                             <button
                                 onClick={startDemo}
-                                className="px-8 py-4 bg-pink-500 text-white rounded-full font-serif text-lg shadow-lg hover:bg-pink-600 transition-all hover:scale-105 flex items-center gap-2"
+                                className="px-8 py-4 flex justify-center bg-pink-500 text-white rounded-full font-serif text-lg shadow-lg hover:bg-pink-600 transition-all hover:scale-105 flex items-center gap-2"
                             >
                                 View Demo <Sparkles className="w-5 h-5" />
                             </button>
@@ -169,7 +169,7 @@ export const LandingPage = () => {
                         exit={{ opacity: 0, y: 20 }}
                         className="fixed bottom-6 left-0 w-full flex justify-center z-50 px-4"
                     >
-                        <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-2xl p-4 flex items-center gap-4 max-w-md w-full">
+                        <div className="bg-white/5 backdrop-blur-md rounded-2xl shadow-2xl p-4 flex max-md:flex-col items-center max-md:gap-2 gap-4 max-w-md w-full relative">
                             <div className="flex-1">
                                 <p className="font-serif text-ink text-sm font-medium">
                                     Create your own memory wall
@@ -205,7 +205,7 @@ export const LandingPage = () => {
                             </div>
                             <button
                                 onClick={() => setShowCTA(false)}
-                                className="text-ink/40 hover:text-ink/60 p-1"
+                                className="text-ink/40 absolute top-1 right-1 hover:text-ink/60 p-1"
                                 aria-label="Dismiss"
                             >
                                 <X className="w-4 h-4" />
@@ -229,7 +229,7 @@ export const LandingPage = () => {
 };
 
 const FeatureCard = ({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) => (
-    <div className="bg-white/60 backdrop-blur-sm rounded-xl p-6 text-center shadow-lg flex flex-col items-center">
+    <div className="bg-white/40 backdrop-blur-sm rounded-xl p-6 text-center shadow-lg flex flex-col items-center">
         <div className="mb-3">{icon}</div>
         <h3 className="font-serif text-lg font-semibold text-ink mb-2">{title}</h3>
         <p className="text-ink/70 text-sm">{description}</p>

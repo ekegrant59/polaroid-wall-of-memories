@@ -164,7 +164,7 @@ export const WallViewerPage = () => {
                 polaroids={polaroids}
             />
             {/* Conditional footer rendering or just append? WallViewer might be absolute positioned. */}
-            <Footer />
+            {/* <Footer /> */}
         </div>
     );
 };
