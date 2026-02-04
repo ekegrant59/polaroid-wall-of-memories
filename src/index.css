@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #FCE7F3;
+  /* Soft Rose/Pink (Restored) */
+  --color-ink: #4A0404;
+  /* Deep Red/Brown */
+  --color-polaroid-frame: #FFFFFF;
+  /* White */
+  --color-rose-muted: #FB7185;
+  /* Rose */
+  --color-rose-deep: #BE123C;
+
+  --font-serif: "Playfair Display", serif;
+  --font-hand: "Homemade Apple", cursive;
+
+  --image-paper-texture: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-serif antialiased;
+    background-image: url('/src/assets/roses-background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+.handwritten {
+  font-family: 'Homemade Apple', cursive;
+}
+
+.texture-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background-image: url("https://www.transparenttextures.com/patterns/noise.png");
+  opacity: 0.4;
+  /* Significantly visible texture */
+  z-index: 50;
+  mix-blend-mode: overlay;
+}
+
+/* Mobile carousel styles */
+@media (max-width: 1024px) {
+  .touch-pan-y {
+    touch-action: pan-y;
+  }
+}
